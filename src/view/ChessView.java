@@ -1,4 +1,3 @@
-// ChessGame/src/view/ChessView.java
 package view;
 
 import javax.swing.*;
@@ -17,22 +16,20 @@ public class ChessView extends JFrame {
     private JButton loadGameButton;
     private JButton showRankingButton;
 
-    // Cache para os ícones carregados
     private Map<String, ImageIcon> pieceIcons = new HashMap<>();
 
     public ChessView() {
         setTitle("Jogo de Xadrez");
         setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        loadPieceImages(); // Carrega as imagens na inicialização
+        loadPieceImages();
         initComponents();
     }
 
-    // Carrega todas as imagens das peças uma vez
     private void loadPieceImages() {
         String[] pieceTypes = { "pawn", "rook", "knight", "bishop", "queen", "king" };
         String[] colors = { "white", "black" };
-        int iconSize = 40; // Tamanho desejado para o ícone
+        int iconSize = 40; 
 
         for (String color : colors) {
             for (String type : pieceTypes) {
@@ -40,17 +37,14 @@ public class ChessView extends JFrame {
                 try {
                     ImageIcon originalIcon = new ImageIcon(getClass().getResource(path));
                     Image originalImage = originalIcon.getImage();
-                    // Redimensiona a imagem para o tamanho desejado
                     Image resizedImage = originalImage.getScaledInstance(iconSize, iconSize, Image.SCALE_SMOOTH);
                     pieceIcons.put(path, new ImageIcon(resizedImage));
                 } catch (NullPointerException e) {
                     System.err.println(
                             "Erro ao carregar imagem: " + path + ". Verifique o caminho e a existência do arquivo.");
-                    // Define um ícone padrão ou exibe um erro visualmente se a imagem não for
-                    // encontrada
                     pieceIcons.put(path,
-                            new ImageIcon(new BufferedImage(iconSize, iconSize, BufferedImage.TYPE_INT_ARGB))); // Ícone
-                                                                                                                // transparente
+                            new ImageIcon(new BufferedImage(iconSize, iconSize, BufferedImage.TYPE_INT_ARGB)));
+                                                                                                            
                 }
             }
         }
