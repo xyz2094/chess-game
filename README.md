@@ -70,6 +70,8 @@ ChessGameMVC/
     * Make sure you have the "Extension Pack for Java" by Microsoft installed. This includes Language Support for Java™, Debugger for Java, Maven for Java, Project Manager for Java, and Test Runner for Java.
 4.  **Configure Project Settings (if necessary):**
     * The `.vscode/settings.json` file is already configured to set `src` as the source path and `bin` as the output path.
+    <br>
+    
     ```json
     {
         "java.project.sourcePaths": ["src"],
