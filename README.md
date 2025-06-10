@@ -1,75 +1,75 @@
 
 # ChessGameMVC ♟️
 
-Um jogo de xadrez desenvolvido em Java com interface gráfica Swing, utilizando o padrão de arquitetura MVC (Model-View-Controller). O projeto conta com funcionalidades completas de jogabilidade, sistema de ranking de jogadores e persistência de estado das partidas.
+A chess game developed in Java using the Swing graphical interface and the MVC (Model-View-Controller) architectural pattern. The project includes full gameplay functionality, a player ranking system, and match state persistence.
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Technologies Used
 
 - **Java 17+**
-- **Swing** — para construção da interface gráfica
-- **Arquitetura MVC** — separação de responsabilidades entre modelo, visualização e controle
-- **Serialização** — para persistência de dados
-- **Coleções Java** — para gerenciamento de ranking e histórico de partidas
+- **Swing** — for GUI development
+- **MVC Architecture** — separates logic, interface, and user input handling
+- **Serialization** — for saving and loading game state
+- **Java Collections** — for managing player rankings and match history
 
-## 🎮 Funcionalidades
+## 🎮 Features
 
-- Modo de jogo para dois jogadores locais
-- Interface gráfica com tabuleiro interativo
-- Validação de movimentos conforme as regras do xadrez
-- Detecção de xeque e xeque-mate
-- Sistema de salvamento e carregamento de partidas
-- Ranking de jogadores com base nas vitórias acumuladas
-- Reinício de partidas e reset de ranking
+- Local two-player mode
+- Interactive graphical chessboard
+- Move validation based on official chess rules
+- Check and checkmate detection
+- Save and load games
+- Player ranking system based on victories
+- Match reset and ranking clear functionality
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 ChessGameMVC/
 ├── src/
-│   ├── model/         # Lógica do jogo e peças
-│   ├── view/          # Interface gráfica Swing
-│   ├── controller/    # Controle das ações do usuário
-│   ├── persistence/   # Serialização e arquivos de estado
-│   └── Main.java      # Inicialização do jogo
-├── resources/         # Ícones e assets visuais
+│   ├── model/         # Game logic and pieces
+│   ├── view/          # Swing-based GUI
+│   ├── controller/    # Handles user actions
+│   ├── persistence/   # Serialization and data files
+│   └── Main.java      # Entry point
+├── resources/         # Icons and visual assets
 └── README.md
 ```
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
-1. Clone o repositório:
+1. Clone the repository:
    ```bash
    git clone https://github.com/vittordallacqua/ChessGameMVC.git
    cd ChessGameMVC
    ```
 
-2. Compile o projeto:
+2. Compile the project:
    ```bash
    javac -d bin src/**/*.java
    ```
 
-3. Execute o jogo:
+3. Run the game:
    ```bash
    java -cp bin Main
    ```
 
-Ou, se estiver utilizando uma IDE (como IntelliJ ou Eclipse), basta importar o projeto como Java Project e rodar a classe `Main`.
+Or, if using an IDE (like IntelliJ or Eclipse), simply import the project as a Java Project and run the `Main` class.
 
-## 💾 Persistência
+## 💾 Persistence
 
-As partidas e o ranking de jogadores são salvos em arquivos locais por meio da serialização de objetos. Ao reiniciar o jogo, é possível continuar de onde parou ou iniciar uma nova partida.
+Matches and player rankings are saved locally via object serialization. When restarting the game, you can continue where you left off or start a new game.
 
 ## 📌 TODOs
 
-- [ ] Implementar modo contra IA
-- [ ] Melhorar o design da interface com componentes personalizados
-- [ ] Suporte a jogadas especiais (roque, en passant, promoção)
-- [ ] Exportação de partidas em formato PGN
+- [ ] Implement AI opponent mode
+- [ ] Improve GUI with custom components
+- [ ] Support special moves (castling, en passant, promotion)
+- [ ] Export matches in PGN format
 
-## 🤝 Contribuições
+## 🤝 Contributions
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
