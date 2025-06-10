@@ -1,4 +1,3 @@
-// ChessGame/src/model/King.java
 package model;
 
 public class King extends ChessPiece {
@@ -12,7 +11,7 @@ public class King extends ChessPiece {
         int rowDiff = Math.abs(toRow - fromRow);
         int colDiff = Math.abs(toCol - fromCol);
 
-        return rowDiff <= 1 && colDiff <= 1; // O rei se move uma casa em qualquer direção
+        return rowDiff <= 1 && colDiff <= 1;
     }
 
     @Override

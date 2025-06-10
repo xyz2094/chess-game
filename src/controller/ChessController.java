@@ -1,4 +1,3 @@
-// ChessGame/src/controller/ChessController.java
 package controller;
 
 import model.Board;
@@ -8,7 +7,6 @@ import model.Ranking;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JOptionPane;
 
 public class ChessController {
     private Board board;
@@ -16,7 +14,7 @@ public class ChessController {
     private Ranking ranking;
     private int selectedRow = -1, selectedCol = -1;
     private final String GAME_FILE = "game.ser";
-    private final String RANKING_FILE = "ranking.ser"; // Changed to .ser for consistency with serialization
+    private final String RANKING_FILE = "ranking.ser"; 
 
     public ChessController(Board board, ChessView view) {
         this.board = board;
@@ -26,7 +24,7 @@ public class ChessController {
             this.ranking = new Ranking();
         }
         initController();
-        view.updateBoard(this.board); // Initial board update
+        view.updateBoard(this.board);
     }
 
     private void initController() {
@@ -54,7 +52,6 @@ public class ChessController {
         }
 
         if (selectedRow == -1) {
-            // No piece selected yet, try to select one
             if (board.getBoard()[row][col] != null && board.getBoard()[row][col].isWhite() == board.isWhiteTurn()) {
                 selectedRow = row;
                 selectedCol = col;
@@ -63,7 +60,6 @@ public class ChessController {
                 view.showMessage("Selecione uma peça válida do seu turno.");
             }
         } else {
-            // A piece is already selected, try to move it
             if (board.movePiece(selectedRow, selectedCol, row, col)) {
                 view.updateBoard(board);
                 view.clearHighlights();
@@ -83,19 +79,19 @@ public class ChessController {
     }
 
     private void newGame() {
-        board = new Board(); // Resets the board
+        board = new Board(); 
         view.updateBoard(board);
         view.clearHighlights();
         selectedRow = -1;
         selectedCol = -1;
-        PersistenceManager.saveGame(board, GAME_FILE); // Save initial state of new game
+        PersistenceManager.saveGame(board, GAME_FILE); 
         view.showMessage("Novo jogo iniciado!");
     }
 
     private void loadGame() {
         Board loadedBoard = PersistenceManager.loadGame(GAME_FILE);
         if (loadedBoard != null) {
-            this.board.loadGameState(loadedBoard); // Update current board instance
+            this.board.loadGameState(loadedBoard);
             view.updateBoard(board);
             view.clearHighlights();
             selectedRow = -1;

@@ -1,4 +1,3 @@
-// ChessGame/src/model/Bishop.java
 package model;
 
 public class Bishop extends ChessPiece {

@@ -4,7 +4,6 @@ import java.io.*;
 
 public class PersistenceManager {
 
-    // Salva o estado atual do tabuleiro em um arquivo (serializado)
     public static void saveGame(Board board, String fileName) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName))) {
             oos.writeObject(board);
@@ -13,7 +12,6 @@ public class PersistenceManager {
         }
     }
 
-    // Carrega o estado salvo do tabuleiro
     public static Board loadGame(String fileName) {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName))) {
             return (Board) ois.readObject();
@@ -23,7 +21,6 @@ public class PersistenceManager {
         return null;
     }
 
-    // Salva o ranking dos jogadores
     public static void saveRanking(Ranking ranking, String fileName) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName))) {
             oos.writeObject(ranking);
@@ -32,7 +29,6 @@ public class PersistenceManager {
         }
     }
 
-    // Carrega o ranking dos jogadores
     public static Ranking loadRanking(String fileName) {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName))) {
             return (Ranking) ois.readObject();

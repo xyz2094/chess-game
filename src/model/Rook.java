@@ -1,4 +1,3 @@
-// ChessGame/src/model/Rook.java
 package model;
 
 public class Rook extends ChessPiece {
@@ -9,9 +8,7 @@ public class Rook extends ChessPiece {
 
     @Override
     public boolean isValidMove(int fromRow, int fromCol, int toRow, int toCol, ChessPiece[][] board) {
-        // Movimento reto na horizontal ou vertical
         if (fromRow == toRow || fromCol == toCol) {
-            // Verificar se há obstáculos no caminho
             if (!hasObstacle(fromRow, fromCol, toRow, toCol, board)) {
                 return true;
             }

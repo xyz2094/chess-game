@@ -1,4 +1,3 @@
-// ChessGame/src/model/Queen.java
 package model;
 
 public class Queen extends ChessPiece {
