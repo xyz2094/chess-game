@@ -37,34 +37,58 @@ ChessGameMVC/
 
 ## 🚀 How to Run
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/vittordallacqua/ChessGameMVC.git
-   cd ChessGameMVC
-   ```
+### Using Command Line
 
-2. Compile the project:
-   ```bash
-   javac -d bin src/**/*.java
-   ```
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/vittordallacqua/ChessGameMVC.git](https://github.com/vittordallacqua/ChessGameMVC.git)
+    cd ChessGameMVC
+    ```
+   
+2.  **Compile the project:**
+    ```bash
+    javac -d bin src/**/*.java
+    ```
+   
+3.  **Run the game:**
+    ```bash
+    java -cp bin Main
+    ```
+   
 
-3. Run the game:
-   ```bash
-   java -cp bin Main
-   ```
+### Using Visual Studio Code
 
-Or, if using an IDE (like IntelliJ or Eclipse), simply import the project as a Java Project and run the `Main` class.
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/vittordallacqua/ChessGameMVC.git](https://github.com/vittordallacqua/ChessGameMVC.git)
+    cd ChessGameMVC
+    ```
+2.  **Open the project in VS Code:**
+    * Open VS Code.
+    * Go to `File > Open Folder...` and select the `ChessGameMVC` directory.
+3.  **Ensure Java Extensions are installed:**
+    * Make sure you have the "Extension Pack for Java" by Microsoft installed. This includes Language Support for Java™, Debugger for Java, Maven for Java, Project Manager for Java, and Test Runner for Java.
+4.  **Configure Project Settings (if necessary):**
+    * The `.vscode/settings.json` file is already configured to set `src` as the source path and `bin` as the output path.
+    ```json
+    {
+        "java.project.sourcePaths": ["src"],
+        "java.project.outputPath": "bin",
+        "java.project.referencedLibraries": [
+            "lib/**/*.jar"
+        ]
+    }
+    ```
+   
+    * VS Code's Project Manager for Java should automatically recognize the project structure.
+5.  **Run the `Main` class:**
+    * Navigate to `src/Main.java` in the VS Code Explorer.
+    * Right-click on `Main.java` and select `Run Java` or click the "Run" button that appears above the `main` method within the editor.
+    * Alternatively, you can open the `Main.java` file and press `F5` to start debugging, or use the "Run" view in the sidebar.
 
 ## 💾 Persistence
 
 Matches and player rankings are saved locally via object serialization. When restarting the game, you can continue where you left off or start a new game.
-
-## 📌 TODOs
-
-- [ ] Implement AI opponent mode
-- [ ] Improve GUI with custom components
-- [ ] Support special moves (castling, en passant, promotion)
-- [ ] Export matches in PGN format
 
 ## 🤝 Contributions
 
