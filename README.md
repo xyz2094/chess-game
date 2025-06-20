@@ -1,17 +1,12 @@
+# Chess Game in Java (MVC + Swing) 
 
-# ♟️Chess Game in Java (MVC + Swing) 
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![JAVA](https://img.shields.io/badge/Built_with-Java-orange)
+![Swing](https://img.shields.io/badge/Swing-blue)
 
 A chess game developed in Java using the Swing graphical interface and the MVC (Model-View-Controller) architectural pattern. The project includes full gameplay functionality, a player ranking system, and match state persistence.
 
-## 🛠️ Technologies Used
-
-- **Java 17+**
-- **Swing** — for GUI development
-- **MVC Architecture** — separates logic, interface, and user input handling
-- **Serialization** — for saving and loading game state
-- **Java Collections** — for managing player rankings and match history
-
-## 🎮 Features
+## Features
 
 - Local two-player mode
 - Interactive graphical chessboard
@@ -21,7 +16,7 @@ A chess game developed in Java using the Swing graphical interface and the MVC (
 - Player ranking system based on victories
 - Match reset and ranking clear functionality
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ChessGameMVC/
@@ -35,7 +30,7 @@ ChessGameMVC/
 └── README.md
 ```
 
-## 🚀 How to Run
+## How to Run
 
 ### Using Command Line
 
@@ -88,14 +83,10 @@ ChessGameMVC/
     * Right-click on `Main.java` and select `Run Java` or click the "Run" button that appears above the `main` method within the editor.
     * Alternatively, you can open the `Main.java` file and press `F5` to start debugging, or use the "Run" view in the sidebar.
 
-## 💾 Persistence
+## Persistence
 
 Matches and player rankings are saved locally via object serialization. When restarting the game, you can continue where you left off or start a new game.
 
-## 🤝 Contributions
-
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
