@@ -2,7 +2,6 @@
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![JAVA](https://img.shields.io/badge/Built_with-Java-orange)
-![Swing](https://img.shields.io/badge/Swing-blue)
 
 A chess game developed in Java using the Swing graphical interface and the MVC (Model-View-Controller) architectural pattern. The project includes full gameplay functionality, a player ranking system, and match state persistence.
 
