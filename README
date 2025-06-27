@@ -14,7 +14,7 @@ How to Run:
     > javac -d bin src/**/*.java
     > java -cp bin Main
 
-Using Visual Studio Code:
+Using VS Code:
 
 * Make sure you have the "Extension Pack for Java" by Microsoft 
 installed. This includes Language Support for Java™, Debugger for 
