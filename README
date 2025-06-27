@@ -9,8 +9,8 @@ start a new game).
 
 How to Run:
 
-    > git clone https://github.com/vittordallacqua/ChessGameMVC.git
-    > cd ChessGameMVC
+    > git clone https://github.com/vittordallacqua/chess-game.git
+    > cd chess-game
     > javac -d bin src/**/*.java
     > java -cp bin Main
 
