@@ -1,4 +1,4 @@
-Chess game in Java (MVC + Swing)
+### Chess game in Java (MVC + Swing)
 
 A chess game developed in Java using the Swing graphical 
 interface and the MVC architectural pattern. The project 
