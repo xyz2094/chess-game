@@ -8,11 +8,12 @@ game, you can continue where you left off or start a new
 game).
 
 How to Run:
-
+```bash
     > git clone https://github.com/vittordallacqua/chess-game.git
     > cd chess-game
     > javac -d bin src/**/*.java
     > java -cp bin Main
+```
 
 Using VS Code:
 
@@ -20,5 +21,3 @@ Using VS Code:
 Microsoft installed. This includes Language Support for 
 Java™, Debugger for Java, Maven for Java, Project Manager 
 for Java, and Test Runner for Java.
-
-This project is licensed under the MIT License.
