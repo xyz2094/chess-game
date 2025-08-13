@@ -9,10 +9,10 @@ game).
 
 How to Run:
 ```bash
-    > git clone https://github.com/vittordallacqua/chess-game.git
-    > cd chess-game
-    > javac -d bin src/**/*.java
-    > java -cp bin Main
+> git clone https://github.com/vittordallacqua/chess-game.git
+> cd chess-game
+> javac -d bin src/**/*.java
+> java -cp bin Main
 ```
 
 Using VS Code:
